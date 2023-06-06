@@ -1,0 +1,472 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: "Arial", serif;
+}
+a {
+    text-decoration: none;
+}
+.container1 {
+    display: flex;
+    background-image: url("img/wheat-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 16px;
+    font-weight: 700;
+    flex-direction: column;
+    align-items:center;
+    min-height: 340px;
+    height: 550px;
+}
+h2 {
+    font-size: 40px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    width: 600px;
+    justify-content: space-between;
+    padding: 0;
+    border-top: 1px solid rgb(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+}
+
+.menu li:hover{
+    border-bottom: 1px solid rgb(255, 255, 255, 1);
+}
+
+.menu li a{
+    line-height: 57px;
+    text-align: center;
+    text-transform: uppercase;
+    /* margin-left: 50px; */
+    color: white; 
+    
+}
+.menu li{
+    list-style: none;
+}
+
+.menu img{
+    margin-right: 50px;
+}
+
+.header {
+    margin-top: 30px;
+}
+
+.menu li a:hover {
+    color: rgb(193, 142, 4);
+}
+.name {
+    margin-bottom: 120px;
+    color: white;
+    font-size: 60px;
+}
+.new_products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 75px;
+}
+.products {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.kvass-items{
+    display: flex;
+    flex-direction: row;
+}
+.kvass-items img {
+    position: relative;
+}
+.new_products p {
+    color: #404040;
+}
+.kv_table{
+    display: flex;
+    flex-direction: column;
+    flex: wrap;
+    z-index: 100;
+    position: absolute;
+    margin-left: 200px;
+}
+.kv_table tr td{
+    padding: 8px 10px;
+    font-size: 15px;
+    white-space: nowrap;
+}
+.one{
+    display: flex;
+    flex-direction: row;
+}
+.one p {
+    font-size: 11px;  
+}
+.two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+.kvass {
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+table {
+    font-weight: bold;
+    font-size: 13px;
+    border: 1px solid lightgray;
+    height: 10px;
+    width: 15px;
+}
+td {
+    border: 1px solid lightgray;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+.more {
+    background-color: white;
+    color: #8B4513;
+    font-size: 12px;
+    font-weight: 900;
+    border: 2px solid #8B4513;
+    padding: 10px;
+    width: 120px;
+    height: 50px;
+}
+.buy {
+    background-color: #8B4513;
+    color: white;
+    font-size: 12px;
+    font-weight: 900;
+    border: none;
+    padding: 12px;
+    width: 120px;
+    height: 50px;
+}
+/* Раздел с особенностями */
+.feature {
+    background-color: #ffcb78;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.item-feature {
+    text-align: left;
+    margin: 70px;
+    text-transform: uppercase ;
+    width: 400px;
+    padding: 0 100px 0 100px;
+}
+.feature div:nth-child(2) {
+    border-left: 1px solid #fcbe59;
+    border-right: 1px solid #fcbe59;
+}
+.item-feature p {
+    text-transform: initial;
+    line-height: 2;
+}
+/* Раздел с историей */
+.history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.item-history {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
+}
+.item-history a {
+    color: #8B4513;
+    text-decoration: underline;
+}
+.item-history a::before {
+    content: "Источник: ";
+    font-style: italic;
+    color: black;
+}
+.history-fact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1000px;
+    justify-content: space-between;
+}
+.item-history p {
+    width: 500px;
+}
+/* Пресса о нас */
+.reviews {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    background-color: #ede5d8;
+}
+.pressabout {
+    padding: 100px;
+    width: 950px;
+    margin: 0 auto;
+}
+.pressabout h2,p {
+    margin-bottom: 50px;
+}
+.pressabout h2 {
+    justify-content: flex-start;
+}
+.text {
+    line-height: 30px;
+}
+.review, .review_author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review {
+    margin-right: 20px;
+    position: relative;
+}
+
+.review::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -105px;
+    width: 70px;
+    height: 70px;
+    background-position: 0 0;
+    background: url(img/quotes.png) no-repeat;
+}
+
+.review_author a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    color: #bcb6ab;
+    border: 2px solid #a5a097;
+}
+.review_author a:hover {
+    background-color: #a5a097;
+}
+/*Раздел с ассортиментом*/
+.assortment{
+    width: 800px;
+    margin: 0 auto;
+}
+.table_assortment {
+    border-collapse: collapse;
+    border-spacing: 0;
+    height: 400px;
+    border: none;
+}
+.table_assortment td {
+    border: none;
+}
+
+.table_assortment tr, th {
+    height: 50px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.table_row {
+    display: flex;
+    width: 800px;
+    align-items: center;
+}
+.table_header {
+    width: 400px;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 0;
+    text-align: left;
+}
+.new kbd{
+     background-color: black;
+     color: white;
+     padding: 0px 5px;
+     margin-left: 10px;
+     font-weight: 400;
+     font-size: 10px;
+}
+.header_name:not(:last-child) {
+    font-size: 11px;
+    color: #999999;
+    padding-bottom: 30px;
+    text-align: left;
+}
+.header_name {
+    font-size: 11px;
+    color: #999999;
+    font-weight: normal;
+    padding-bottom: 30px;
+    text-align: right;
+}
+.table_row td:not(:first-child) {
+    text-align: left;
+    font-weight: normal;
+}
+.table_row th:nth-child(2), td:nth-child(2) {
+    width: 100px;
+    padding: 0;
+}
+.table_row th:nth-child(3), td:nth-child(3) {
+    width: 60px;
+    padding: 0;
+}
+.table_row th:nth-child(4), td:nth-child(4) {
+    width: 140px;
+    padding: 0;
+}
+.table_row th:nth-child(5){
+    width: 100px;
+    text-align: right;
+    padding: 0;
+}
+.table_row td:nth-child(5){
+    text-align: right;
+    width: 100px;
+    padding: 0;
+}
+#form{
+    background-color: #ffcb78;
+}
+
+.container_form{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.phone_number{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.phone_number input,label{
+    width: 290px;
+}
+
+.form_group{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+.agree{
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+input, label{
+    display: block;
+    margin: 10px 0;
+    
+}
+
+.agree label {
+    white-space: nowrap;
+}
+
+input, textarea, select{
+    border: none;
+    resize: vertical;
+    background-color: #e5b66c;
+    color: rgb(0, 0, 0, 0.3);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 15px;
+}
+
+.custom_checkbox{
+    position:absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom_checkbox + label{
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom_checkbox + label::before{
+    content: '';
+    display: inline-block;
+    background: #e5b66c;
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+}
+
+.custom_checkbox:checked + label::before {
+    background-image: url(img/check-mark.png);
+}
+
+#btn_send_order{
+    color: white;
+    width: 200px;
+    padding: 10px;
+    background-color: #8B4513;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+/* Подвал сайта */
+.footer{
+    display: flex;
+    background:black;
+    background-size: cover;
+    font-size: 16px;
+    font-weight: 700;
+    flex-direction: column;
+    align-items:center;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.footer-menu{
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.contacts{
+    display: flex;
+    width: 213px;
+    height: 68px;
+}
+.contacts a{
+    padding: 30px;
+    background-color: #1b1b1b;
+    border: 1px solid rgba(255, 203, 120, 0.1);
+}
